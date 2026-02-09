@@ -332,7 +332,7 @@
       "priority": "high",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 0
+      "sortOrder": 2
     },
     {
       "id": "brief_pipeline",
@@ -368,7 +368,7 @@
       "id": "content_pipeline_seed",
       "title": "Seed Content Pipeline: 10 reel ideas + scoring",
       "description": "Create a content pipeline inside Mission Control with 10 starter ideas and a scoring rubric (novelty x ease x expected views x brand fit).",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "content",
       "tags": [
         "reels",
@@ -399,7 +399,8 @@
           "timestamp": "2026-02-08T21:13:15Z"
         }
       ],
-      "createdAt": "2026-02-08T20:44:07Z"
+      "createdAt": "2026-02-08T20:44:07Z",
+      "sortOrder": 1
     },
     {
       "id": "amplo_pipeline_seed",
@@ -1069,6 +1070,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "Seed Content Pipeline: 10 reel ideas + scoring",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "Connect Notion: store hudson os page + tasks DB IDs",
       "from": "backlog",
       "to": "in_progress",
@@ -1095,5 +1104,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-09T04:31:19.345Z"
+  "lastUpdated": "2026-02-09T04:52:22.092Z"
 }
