@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": "guide_onboarding",
-      "title": "\ud83d\ude80 Setup Guide \u2014 Mission Control (Local + Optional Cloud)",
+      "title": "🚀 Setup Guide — Mission Control (Local + Optional Cloud)",
       "description": "You already have a working LOCAL dashboard at http://localhost:3066/.\n\nOptional: you can later add GitHub Pages + webhooks for remote control, but it requires gh + tailscale on this machine.",
       "status": "permanent",
       "project": "guides",
@@ -13,17 +13,17 @@
       "subtasks": [
         {
           "id": "sub_001",
-          "title": "1. Enable GitHub Pages: Settings \u2192 Pages \u2192 Branch: main \u2192 Save",
+          "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save",
           "done": false
         },
         {
           "id": "sub_002",
-          "title": "2. Create GitHub Token: github.com/settings/tokens \u2192 Generate (classic) \u2192 Scope: repo",
+          "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo",
           "done": false
         },
         {
           "id": "sub_003",
-          "title": "3. Connect Dashboard: Open your GitHub Pages URL \u2192 Click 'Connect GitHub' \u2192 Paste token",
+          "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token",
           "done": false
         },
         {
@@ -33,17 +33,17 @@
         },
         {
           "id": "sub_005",
-          "title": "5. Enable Funnel: tailscale funnel 18789 \u2192 Copy your URL",
+          "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL",
           "done": false
         },
         {
           "id": "sub_006",
-          "title": "6. Generate Webhook Token: openssl rand -hex 32 \u2192 Save it",
+          "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it",
           "done": false
         },
         {
           "id": "sub_007",
-          "title": "7. Add GitHub Webhook: Settings \u2192 Webhooks \u2192 Add \u2192 URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN",
+          "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN",
           "done": false
         },
         {
@@ -64,8 +64,8 @@
     },
     {
       "id": "guide_user",
-      "title": "\ud83d\udcd6 User Guide \u2014 How to Use Mission Control",
-      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n\u2022 \ud83d\udc64 **You** \u2014 Use the Dashboard UI (drag & drop, buttons, forms)\n\u2022 \ud83e\udd16 **MoltBot** \u2014 Uses CLI scripts or edits tasks.json directly",
+      "title": "📖 User Guide — How to Use Mission Control",
+      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n• 👤 **You** — Use the Dashboard UI (drag & drop, buttons, forms)\n• 🤖 **MoltBot** — Uses CLI scripts or edits tasks.json directly",
       "status": "permanent",
       "project": "guides",
       "tags": [
@@ -75,12 +75,12 @@
       "subtasks": [
         {
           "id": "sub_001",
-          "title": "\u2014 THE BOARD \u2014",
+          "title": "— THE BOARD —",
           "done": false
         },
         {
           "id": "sub_002",
-          "title": "Columns: Permanent (recurring) \u2192 Backlog \u2192 In Progress \u2192 Review \u2192 Done",
+          "title": "Columns: Permanent (recurring) → Backlog → In Progress → Review → Done",
           "done": false
         },
         {
@@ -95,22 +95,22 @@
         },
         {
           "id": "sub_005",
-          "title": "\u2014 CREATING TASKS \u2014",
+          "title": "— CREATING TASKS —",
           "done": false
         },
         {
           "id": "sub_006",
-          "title": "\ud83d\udc64 You: Click '+' button in any column header",
+          "title": "👤 You: Click '+' button in any column header",
           "done": false
         },
         {
           "id": "sub_007",
-          "title": "\ud83e\udd16 MoltBot: Edits data/tasks.json or uses CLI",
+          "title": "🤖 MoltBot: Edits data/tasks.json or uses CLI",
           "done": false
         },
         {
           "id": "sub_008",
-          "title": "\u2014 TASK DETAILS \u2014",
+          "title": "— TASK DETAILS —",
           "done": false
         },
         {
@@ -135,7 +135,7 @@
         },
         {
           "id": "sub_013",
-          "title": "Priority: High (\ud83d\udd34) / Medium (\ud83d\udfe1) / Low (\ud83d\udfe2)",
+          "title": "Priority: High (🔴) / Medium (🟡) / Low (🟢)",
           "done": false
         },
         {
@@ -145,7 +145,7 @@
         },
         {
           "id": "sub_015",
-          "title": "\u2014 WORKFLOW WITH MOLTBOT \u2014",
+          "title": "— WORKFLOW WITH MOLTBOT —",
           "done": false
         },
         {
@@ -155,7 +155,7 @@
         },
         {
           "id": "sub_017",
-          "title": "2. Move to 'In Progress' \u2192 MoltBot gets notified via webhook",
+          "title": "2. Move to 'In Progress' → MoltBot gets notified via webhook",
           "done": false
         },
         {
@@ -170,72 +170,72 @@
         },
         {
           "id": "sub_020",
-          "title": "5. You review: Approve \u2192 Done, or add feedback \u2192 back to In Progress",
+          "title": "5. You review: Approve → Done, or add feedback → back to In Progress",
           "done": false
         },
         {
           "id": "sub_021",
-          "title": "\u2014 DASHBOARD FEATURES \u2014",
+          "title": "— DASHBOARD FEATURES —",
           "done": false
         },
         {
           "id": "sub_022",
-          "title": "\ud83d\udd0d Search: Filter tasks by text",
+          "title": "🔍 Search: Filter tasks by text",
           "done": false
         },
         {
           "id": "sub_023",
-          "title": "\ud83d\udcc1 Project filter: Click project buttons to filter",
+          "title": "📁 Project filter: Click project buttons to filter",
           "done": false
         },
         {
           "id": "sub_024",
-          "title": "\u2699\ufe0f Settings: Add/edit projects",
+          "title": "⚙️ Settings: Add/edit projects",
           "done": false
         },
         {
           "id": "sub_025",
-          "title": "\ud83d\udce6 Archive: Store completed tasks out of sight",
+          "title": "📦 Archive: Store completed tasks out of sight",
           "done": false
         },
         {
           "id": "sub_026",
-          "title": "\ud83d\udc65 Team: See repo collaborators (if public)",
+          "title": "👥 Team: See repo collaborators (if public)",
           "done": false
         },
         {
           "id": "sub_027",
-          "title": "\ud83d\udcda Docs: Built-in documentation",
+          "title": "📚 Docs: Built-in documentation",
           "done": false
         },
         {
           "id": "sub_028",
-          "title": "\u2014 MOLTBOT CAPABILITIES \u2014",
+          "title": "— MOLTBOT CAPABILITIES —",
           "done": false
         },
         {
           "id": "sub_029",
-          "title": "\ud83e\udd16 Can CREATE tasks (via CLI or JSON)",
+          "title": "🤖 Can CREATE tasks (via CLI or JSON)",
           "done": false
         },
         {
           "id": "sub_030",
-          "title": "\ud83e\udd16 Can UPDATE task status, subtasks, comments",
+          "title": "🤖 Can UPDATE task status, subtasks, comments",
           "done": false
         },
         {
           "id": "sub_031",
-          "title": "\ud83e\udd16 Can MOVE tasks between columns",
+          "title": "🤖 Can MOVE tasks between columns",
           "done": false
         },
         {
           "id": "sub_032",
-          "title": "\ud83e\udd16 Can DELETE/archive tasks",
+          "title": "🤖 Can DELETE/archive tasks",
           "done": false
         },
         {
           "id": "sub_033",
-          "title": "\ud83e\udd16 Receives WEBHOOK when you move tasks to In Progress",
+          "title": "🤖 Receives WEBHOOK when you move tasks to In Progress",
           "done": false
         }
       ],
@@ -243,7 +243,7 @@
       "comments": [
         {
           "author": "Mission Control",
-          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' \u2014 they're documentation!",
+          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' — they're documentation!",
           "timestamp": "2026-01-01T00:00:00Z"
         }
       ],
@@ -252,7 +252,7 @@
     {
       "id": "ops_status_widget",
       "title": "Build Ops panel: health + restart + logs (3050/3040/3066)",
-      "description": "Create a small internal Ops panel (and/or API endpoints) that shows:\n- health checks for 3050, 3040, 3066\n- last restart time\n- last 50 log lines (journalctl --user -u <service>)\n- safe restart buttons\n\nGoal: Hudson can ask in Telegram \u2018status\u2019 and get a crisp report.",
+      "description": "Create a small internal Ops panel (and/or API endpoints) that shows:\n- health checks for 3050, 3040, 3066\n- last restart time\n- last 50 log lines (journalctl --user -u <service>)\n- safe restart buttons\n\nGoal: Hudson can ask in Telegram ‘status’ and get a crisp report.",
       "status": "backlog",
       "project": "ops",
       "tags": [
@@ -277,7 +277,7 @@
         },
         {
           "id": "s4",
-          "title": "Implement restart actions (systemctl --user restart \u2026) with confirmation",
+          "title": "Implement restart actions (systemctl --user restart …) with confirmation",
           "done": false
         },
         {
@@ -432,7 +432,7 @@
     },
     {
       "id": "today_win_widget",
-      "title": "Today\u2019s Win widget: 1 metric + 1 deliverable",
+      "title": "Today’s Win widget: 1 metric + 1 deliverable",
       "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
       "status": "backlog",
       "project": "dashboard",
@@ -446,7 +446,7 @@
     },
     {
       "id": "streaks_widget",
-      "title": "Habit streaks overlay + \u2018at risk\u2019 alerts",
+      "title": "Habit streaks overlay + ‘at risk’ alerts",
       "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
       "status": "backlog",
       "project": "habits",
@@ -502,8 +502,8 @@
     },
     {
       "id": "epic_everything_engine",
-      "title": "EPIC: OpenClaw \u2018Everything Engine\u2019 (Oracle + Momentum + Reactor + Digests)",
-      "description": "Goal: wire Hudson\u2019s life/business/creative inputs into a single command center. Build iteratively: local-first, then add API integrations as credentials become available.\n\nConstraint: no outbound messages/emails/posts without Hudson approval.",
+      "title": "EPIC: OpenClaw ‘Everything Engine’ (Oracle + Momentum + Reactor + Digests)",
+      "description": "Goal: wire Hudson’s life/business/creative inputs into a single command center. Build iteratively: local-first, then add API integrations as credentials become available.\n\nConstraint: no outbound messages/emails/posts without Hudson approval.",
       "status": "backlog",
       "project": "dashboard",
       "tags": [
@@ -512,22 +512,22 @@
       "subtasks": [
         {
           "id": "mc-001",
-          "title": "Oracle (daily strategic brief @6am) \u2014 scaffold + inputs",
+          "title": "Oracle (daily strategic brief @6am) — scaffold + inputs",
           "done": false
         },
         {
           "id": "mc-002",
-          "title": "Momentum Score (0\u2013100) \u2014 define signals + compute",
+          "title": "Momentum Score (0–100) — define signals + compute",
           "done": false
         },
         {
           "id": "mc-003",
-          "title": "Content Reactor (cross-pollination engine) \u2014 repository + collisions",
+          "title": "Content Reactor (cross-pollination engine) — repository + collisions",
           "done": false
         },
         {
           "id": "mc-004",
-          "title": "Second Brain Digest (weekly) \u2014 synthesis + 1 question",
+          "title": "Second Brain Digest (weekly) — synthesis + 1 question",
           "done": false
         }
       ],
@@ -535,7 +535,7 @@
       "comments": [
         {
           "author": "Calvin",
-          "text": "Created EPIC from your message_id 110. I\u2019ll treat each subtask as \u2018broken until implemented\u2019 and iterate via heartbeats.",
+          "text": "Created EPIC from your message_id 110. I’ll treat each subtask as ‘broken until implemented’ and iterate via heartbeats.",
           "timestamp": "2026-02-08T21:31:49Z"
         },
         {
@@ -548,7 +548,7 @@
     },
     {
       "id": "oracle_daily_brief_6am",
-      "title": "\ud83d\udd2e The Oracle: predictive daily briefing (6am)",
+      "title": "🔮 The Oracle: predictive daily briefing (6am)",
       "description": "Local-first implementation. Inputs (phase 1): ops status + Mission Control priorities + weather. Phase 2: Notion + Calendar. Phase 3: ads dashboards + astro conditions.\n\nNeed from Hudson later: Notion links/IDs + Google auth + which ad platforms.",
       "status": "backlog",
       "project": "oracle",
@@ -584,8 +584,8 @@
     },
     {
       "id": "momentum_score",
-      "title": "\ud83d\udcca Momentum Score (0\u2013100) + weakest-link recommendation",
-      "description": "Define 5\u20136 weighted inputs. Start with what we can measure locally: content shipped, tasks completed, workouts logged, ops stability. Later add revenue/school deadlines/sleep.",
+      "title": "📊 Momentum Score (0–100) + weakest-link recommendation",
+      "description": "Define 5–6 weighted inputs. Start with what we can measure locally: content shipped, tasks completed, workouts logged, ops stability. Later add revenue/school deadlines/sleep.",
       "status": "backlog",
       "project": "dashboard",
       "tags": [
@@ -614,7 +614,7 @@
     },
     {
       "id": "content_reactor",
-      "title": "\ud83e\uddea Content Reactor: cross-pollination \u2018collision report\u2019",
+      "title": "🧪 Content Reactor: cross-pollination ‘collision report’",
       "description": "Create a central content repository structure + weekly collision report that mashes surf + astro + marketing + comedy into unique angles. Local-first; later can pull from Drive/IG exports.",
       "status": "backlog",
       "project": "content",
@@ -630,7 +630,7 @@
         },
         {
           "id": "s2",
-          "title": "Implement collision-report generator (3\u20135 mashups)",
+          "title": "Implement collision-report generator (3–5 mashups)",
           "done": false
         },
         {
@@ -645,7 +645,7 @@
     },
     {
       "id": "second_brain_digest_weekly",
-      "title": "\ud83d\uddde\ufe0f Second Brain Digest (Sunday) \u2014 weekly synthesis + 1 question",
+      "title": "🗞️ Second Brain Digest (Sunday) — weekly synthesis + 1 question",
       "description": "Aggregate created/consumed/learned/accomplished. Output: a personal newsletter for Hudson + 1 provocative question. Local-first using workspace activity + Mission Control + vault notes.",
       "status": "backlog",
       "project": "dashboard",
@@ -676,7 +676,7 @@
     },
     {
       "id": "clear_sky_sniper",
-      "title": "\ud83c\udf19 Clear Sky Sniper: imaging window alerts + target list (scaffold)",
+      "title": "🌙 Clear Sky Sniper: imaging window alerts + target list (scaffold)",
       "description": "Scaffold: moon phase calc + season targets list + decision logic. Later wire real seeing/cloud data + calendar constraints.",
       "status": "backlog",
       "project": "astro",
@@ -706,7 +706,7 @@
     },
     {
       "id": "bit_workshop",
-      "title": "\ud83c\udfa4 Bit Workshop: writers-room prompts + weekly output",
+      "title": "🎤 Bit Workshop: writers-room prompts + weekly output",
       "description": "Create a structured prompt pack that takes raw premises and returns: angles, misdirects, tags, and 3 style passes (dark/absurd/casual).",
       "status": "backlog",
       "project": "comedy",
@@ -721,7 +721,7 @@
         },
         {
           "id": "s2",
-          "title": "Create 3 \u2018comedic lenses\u2019 output format",
+          "title": "Create 3 ‘comedic lenses’ output format",
           "done": false
         },
         {
@@ -736,7 +736,7 @@
     },
     {
       "id": "life_rpg",
-      "title": "\ud83c\udfae Life RPG: XP + skill trees + boss battles (design doc)",
+      "title": "🎮 Life RPG: XP + skill trees + boss battles (design doc)",
       "description": "Design-only first: define skills, XP rules, streaks, and HUD widgets. Implement later.",
       "status": "backlog",
       "project": "rpg",
@@ -766,8 +766,8 @@
     },
     {
       "id": "creative_293ac6b838",
-      "title": "\ud83c\udfac Reel Pack: 5 \u201cSurf x Business\u201d scripts (hooks + VO + captions)",
-      "description": "Create 5 short-form scripts that translate surf lessons into marketing/business principles. Keep them 30\u201345s. Provide hook variants, VO, on-screen text beats, caption, CTA. Save under content/scripts/.",
+      "title": "🎬 Reel Pack: 5 “Surf x Business” scripts (hooks + VO + captions)",
+      "description": "Create 5 short-form scripts that translate surf lessons into marketing/business principles. Keep them 30–45s. Provide hook variants, VO, on-screen text beats, caption, CTA. Save under content/scripts/.",
       "status": "review",
       "project": "content_pipeline",
       "tags": [
@@ -816,7 +816,7 @@
     },
     {
       "id": "creative_0028a275f7",
-      "title": "\ud83e\uddf2 \u201cComment keyword\u201d growth loop: 10 CTA templates + reply scripts",
+      "title": "🧲 “Comment keyword” growth loop: 10 CTA templates + reply scripts",
       "description": "Design a repeatable Instagram comment-to-DM loop (no spam). Create 10 CTA templates (e.g., comment CONDITIONS), plus the DM reply message and a short follow-up. Save to content/growth/cta-library.md.",
       "status": "review",
       "project": "content_pipeline",
@@ -860,8 +860,8 @@
     },
     {
       "id": "creative_81ff1b4bdc",
-      "title": "\ud83d\udcc8 Content scorecard v1: what to post next (simple + ruthless)",
-      "description": "Make a one-page scorecard that ranks reel ideas by: novelty, clarity, watch-time potential, shareability, and alignment with Amplo offer. Use 1\u20135 scoring with weights. Save to content/scorecard.md and integrate into /cc widget later.",
+      "title": "📈 Content scorecard v1: what to post next (simple + ruthless)",
+      "description": "Make a one-page scorecard that ranks reel ideas by: novelty, clarity, watch-time potential, shareability, and alignment with Amplo offer. Use 1–5 scoring with weights. Save to content/scorecard.md and integrate into /cc widget later.",
       "status": "review",
       "project": "dashboards",
       "tags": [
@@ -904,7 +904,7 @@
     },
     {
       "id": "creative_e12eb6146f",
-      "title": "\ud83e\udde0 Bit Workshop: 10 \u201cmarketing pain\u201d joke premises (clean, short)",
+      "title": "🧠 Bit Workshop: 10 “marketing pain” joke premises (clean, short)",
       "description": "Write 10 comedy premises from real marketing pain points (leads, scope creep, dashboards). Each includes: premise, punchline direction, and a punchier tag. Save to everything-engine/comedy/outbox/.",
       "status": "backlog",
       "project": "comedy",
@@ -932,8 +932,8 @@
     },
     {
       "id": "creative_4926851873",
-      "title": "\ud83e\udde9 Series concept: \u201c1 Minute Missions\u201d weekly format (8 episodes)",
-      "description": "Define a weekly series format that\u2019s easy to film. Provide 8 episode outlines with hooks + talking points + b-roll. Save to content/series/1-minute-missions.md.",
+      "title": "🧩 Series concept: “1 Minute Missions” weekly format (8 episodes)",
+      "description": "Define a weekly series format that’s easy to film. Provide 8 episode outlines with hooks + talking points + b-roll. Save to content/series/1-minute-missions.md.",
       "status": "review",
       "project": "content_pipeline",
       "tags": [
@@ -963,7 +963,7 @@
       "comments": [
         {
           "author": "Calvin",
-          "text": "Starting: building \u201c1 Minute Missions\u201d series format + 8 episode outlines + reusable template. Will save to content/series/1-minute-missions.md",
+          "text": "Starting: building “1 Minute Missions” series format + 8 episode outlines + reusable template. Will save to content/series/1-minute-missions.md",
           "timestamp": "2026-02-08T23:57:39Z"
         },
         {
@@ -980,73 +980,73 @@
       "id": "amplo",
       "name": "Amplo Marketing",
       "color": "#8b5cf6",
-      "icon": "\ud83d\udcc8"
+      "icon": "📈"
     },
     {
       "id": "astro",
       "name": "Astronomy",
       "color": "#a78bfa",
-      "icon": "\ud83d\udd2d"
+      "icon": "🔭"
     },
     {
       "id": "comedy",
       "name": "Comedy",
       "color": "#fb7185",
-      "icon": "\ud83c\udfa4"
+      "icon": "🎤"
     },
     {
       "id": "content",
       "name": "Content Pipeline",
       "color": "#f59e0b",
-      "icon": "\ud83c\udfac"
+      "icon": "🎬"
     },
     {
       "id": "dashboard",
       "name": "Dashboards",
       "color": "#06b6d4",
-      "icon": "\ud83d\udda5\ufe0f"
+      "icon": "🖥️"
     },
     {
       "id": "guides",
       "name": "Guides",
       "color": "#10b981",
-      "icon": "\ud83d\udcda"
+      "icon": "📚"
     },
     {
       "id": "habits",
       "name": "Habits / Streaks",
       "color": "#84cc16",
-      "icon": "\u2705"
+      "icon": "✅"
     },
     {
       "id": "notion",
       "name": "Hudson OS (Notion)",
       "color": "#22c55e",
-      "icon": "\ud83e\udde0"
+      "icon": "🧠"
     },
     {
       "id": "rpg",
       "name": "Life RPG",
       "color": "#f97316",
-      "icon": "\ud83c\udfae"
+      "icon": "🎮"
     },
     {
       "id": "default",
       "name": "My Project",
       "color": "#3b82f6",
-      "icon": "\ud83d\udcc1"
+      "icon": "📁"
     },
     {
       "id": "ops",
       "name": "Ops / Systems",
       "color": "#ef4444",
-      "icon": "\ud83d\udee0\ufe0f"
+      "icon": "🛠️"
     },
     {
       "id": "oracle",
       "name": "Oracle Briefing",
       "color": "#0ea5e9",
-      "icon": "\ud83d\udd2e"
+      "icon": "🔮"
     }
   ],
   "activities": [
@@ -1063,5 +1063,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-08T21:34:31Z"
+  "lastUpdated": "2026-02-09T04:25:05.969Z"
 }
