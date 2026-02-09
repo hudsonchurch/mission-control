@@ -301,7 +301,7 @@
       "id": "notion_connect_ids",
       "title": "Connect Notion: store hudson os page + tasks DB IDs",
       "description": "Need the Notion page/database URLs from Hudson. Extract IDs, store in a workspace config file (e.g. notion/ids.json). Then enable Notion pulls for daily briefs + task syncing.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "notion",
       "tags": [
         "notion",
@@ -331,7 +331,8 @@
       ],
       "priority": "high",
       "comments": [],
-      "createdAt": "2026-02-08T20:44:07Z"
+      "createdAt": "2026-02-08T20:44:07Z",
+      "sortOrder": 0
     },
     {
       "id": "brief_pipeline",
@@ -1068,6 +1069,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "Connect Notion: store hudson os page + tasks DB IDs",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "Build Ops panel: health + restart + logs (3050/3040/3066)",
       "from": "backlog",
       "to": "in_progress",
@@ -1086,5 +1095,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-09T04:27:25.007Z"
+  "lastUpdated": "2026-02-09T04:31:19.345Z"
 }
