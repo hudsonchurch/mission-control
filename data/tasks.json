@@ -253,7 +253,7 @@
       "id": "ops_status_widget",
       "title": "Build Ops panel: health + restart + logs (3050/3040/3066)",
       "description": "Create a small internal Ops panel (and/or API endpoints) that shows:\n- health checks for 3050, 3040, 3066\n- last restart time\n- last 50 log lines (journalctl --user -u <service>)\n- safe restart buttons\n\nGoal: Hudson can ask in Telegram ‘status’ and get a crisp report.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "ops",
       "tags": [
         "uptime",
@@ -294,7 +294,8 @@
           "timestamp": "2026-02-08T21:13:15Z"
         }
       ],
-      "createdAt": "2026-02-08T20:44:07Z"
+      "createdAt": "2026-02-08T20:44:07Z",
+      "sortOrder": 0
     },
     {
       "id": "notion_connect_ids",
@@ -985,7 +986,8 @@
         "scheduled"
       ],
       "subtasks": [],
-      "createdAt": "2026-02-09T04:25:27.365Z"
+      "createdAt": "2026-02-09T04:25:27.365Z",
+      "sortOrder": 0
     }
   ],
   "projects": [
@@ -1064,6 +1066,14 @@
   ],
   "activities": [
     {
+      "type": "moved",
+      "actor": "hudsonchurch",
+      "task": "Build Ops panel: health + restart + logs (3050/3040/3066)",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
       "type": "created",
       "actor": "Mission Control",
       "task": "Onboarding Guide",
@@ -1076,5 +1086,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-09T04:25:05.969Z"
+  "lastUpdated": "2026-02-09T04:27:25.007Z"
 }
