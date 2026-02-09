@@ -1,0 +1,1067 @@
+{
+  "tasks": [
+    {
+      "id": "guide_onboarding",
+      "title": "\ud83d\ude80 Setup Guide \u2014 Mission Control (Local + Optional Cloud)",
+      "description": "You already have a working LOCAL dashboard at http://localhost:3066/.\n\nOptional: you can later add GitHub Pages + webhooks for remote control, but it requires gh + tailscale on this machine.",
+      "status": "permanent",
+      "project": "guides",
+      "tags": [
+        "guide",
+        "setup"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_001",
+          "title": "1. Enable GitHub Pages: Settings \u2192 Pages \u2192 Branch: main \u2192 Save",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "2. Create GitHub Token: github.com/settings/tokens \u2192 Generate (classic) \u2192 Scope: repo",
+          "done": false
+        },
+        {
+          "id": "sub_003",
+          "title": "3. Connect Dashboard: Open your GitHub Pages URL \u2192 Click 'Connect GitHub' \u2192 Paste token",
+          "done": false
+        },
+        {
+          "id": "sub_004",
+          "title": "4. Install Tailscale: brew install tailscale && tailscale up",
+          "done": false
+        },
+        {
+          "id": "sub_005",
+          "title": "5. Enable Funnel: tailscale funnel 18789 \u2192 Copy your URL",
+          "done": false
+        },
+        {
+          "id": "sub_006",
+          "title": "6. Generate Webhook Token: openssl rand -hex 32 \u2192 Save it",
+          "done": false
+        },
+        {
+          "id": "sub_007",
+          "title": "7. Add GitHub Webhook: Settings \u2192 Webhooks \u2192 Add \u2192 URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN",
+          "done": false
+        },
+        {
+          "id": "sub_008",
+          "title": "8. Test: Create a task, move to In Progress, verify MoltBot receives notification",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "Mission Control",
+          "text": "Once all steps are complete, you can archive this guide or keep it as reference. Your setup is done when MoltBot responds to task changes!",
+          "timestamp": "2026-01-01T00:00:00Z"
+        }
+      ],
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "guide_user",
+      "title": "\ud83d\udcd6 User Guide \u2014 How to Use Mission Control",
+      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n\u2022 \ud83d\udc64 **You** \u2014 Use the Dashboard UI (drag & drop, buttons, forms)\n\u2022 \ud83e\udd16 **MoltBot** \u2014 Uses CLI scripts or edits tasks.json directly",
+      "status": "permanent",
+      "project": "guides",
+      "tags": [
+        "guide",
+        "help"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_001",
+          "title": "\u2014 THE BOARD \u2014",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "Columns: Permanent (recurring) \u2192 Backlog \u2192 In Progress \u2192 Review \u2192 Done",
+          "done": false
+        },
+        {
+          "id": "sub_003",
+          "title": "Drag & Drop: Move tasks between columns to change status",
+          "done": false
+        },
+        {
+          "id": "sub_004",
+          "title": "Click task card to open details and edit",
+          "done": false
+        },
+        {
+          "id": "sub_005",
+          "title": "\u2014 CREATING TASKS \u2014",
+          "done": false
+        },
+        {
+          "id": "sub_006",
+          "title": "\ud83d\udc64 You: Click '+' button in any column header",
+          "done": false
+        },
+        {
+          "id": "sub_007",
+          "title": "\ud83e\udd16 MoltBot: Edits data/tasks.json or uses CLI",
+          "done": false
+        },
+        {
+          "id": "sub_008",
+          "title": "\u2014 TASK DETAILS \u2014",
+          "done": false
+        },
+        {
+          "id": "sub_009",
+          "title": "Title: Short, clear name for the task",
+          "done": false
+        },
+        {
+          "id": "sub_010",
+          "title": "Description: Detailed instructions (Markdown supported)",
+          "done": false
+        },
+        {
+          "id": "sub_011",
+          "title": "Subtasks: Break work into smaller steps (checkable)",
+          "done": false
+        },
+        {
+          "id": "sub_012",
+          "title": "Comments: Add notes, feedback, or progress updates",
+          "done": false
+        },
+        {
+          "id": "sub_013",
+          "title": "Priority: High (\ud83d\udd34) / Medium (\ud83d\udfe1) / Low (\ud83d\udfe2)",
+          "done": false
+        },
+        {
+          "id": "sub_014",
+          "title": "Project: Organize tasks by project/category",
+          "done": false
+        },
+        {
+          "id": "sub_015",
+          "title": "\u2014 WORKFLOW WITH MOLTBOT \u2014",
+          "done": false
+        },
+        {
+          "id": "sub_016",
+          "title": "1. Create task in Backlog with clear description",
+          "done": false
+        },
+        {
+          "id": "sub_017",
+          "title": "2. Move to 'In Progress' \u2192 MoltBot gets notified via webhook",
+          "done": false
+        },
+        {
+          "id": "sub_018",
+          "title": "3. MoltBot works on task, updates subtasks & adds comments",
+          "done": false
+        },
+        {
+          "id": "sub_019",
+          "title": "4. MoltBot moves to 'Review' when done",
+          "done": false
+        },
+        {
+          "id": "sub_020",
+          "title": "5. You review: Approve \u2192 Done, or add feedback \u2192 back to In Progress",
+          "done": false
+        },
+        {
+          "id": "sub_021",
+          "title": "\u2014 DASHBOARD FEATURES \u2014",
+          "done": false
+        },
+        {
+          "id": "sub_022",
+          "title": "\ud83d\udd0d Search: Filter tasks by text",
+          "done": false
+        },
+        {
+          "id": "sub_023",
+          "title": "\ud83d\udcc1 Project filter: Click project buttons to filter",
+          "done": false
+        },
+        {
+          "id": "sub_024",
+          "title": "\u2699\ufe0f Settings: Add/edit projects",
+          "done": false
+        },
+        {
+          "id": "sub_025",
+          "title": "\ud83d\udce6 Archive: Store completed tasks out of sight",
+          "done": false
+        },
+        {
+          "id": "sub_026",
+          "title": "\ud83d\udc65 Team: See repo collaborators (if public)",
+          "done": false
+        },
+        {
+          "id": "sub_027",
+          "title": "\ud83d\udcda Docs: Built-in documentation",
+          "done": false
+        },
+        {
+          "id": "sub_028",
+          "title": "\u2014 MOLTBOT CAPABILITIES \u2014",
+          "done": false
+        },
+        {
+          "id": "sub_029",
+          "title": "\ud83e\udd16 Can CREATE tasks (via CLI or JSON)",
+          "done": false
+        },
+        {
+          "id": "sub_030",
+          "title": "\ud83e\udd16 Can UPDATE task status, subtasks, comments",
+          "done": false
+        },
+        {
+          "id": "sub_031",
+          "title": "\ud83e\udd16 Can MOVE tasks between columns",
+          "done": false
+        },
+        {
+          "id": "sub_032",
+          "title": "\ud83e\udd16 Can DELETE/archive tasks",
+          "done": false
+        },
+        {
+          "id": "sub_033",
+          "title": "\ud83e\udd16 Receives WEBHOOK when you move tasks to In Progress",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [
+        {
+          "author": "Mission Control",
+          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' \u2014 they're documentation!",
+          "timestamp": "2026-01-01T00:00:00Z"
+        }
+      ],
+      "createdAt": "2026-01-01T00:00:01Z"
+    },
+    {
+      "id": "ops_status_widget",
+      "title": "Build Ops panel: health + restart + logs (3050/3040/3066)",
+      "description": "Create a small internal Ops panel (and/or API endpoints) that shows:\n- health checks for 3050, 3040, 3066\n- last restart time\n- last 50 log lines (journalctl --user -u <service>)\n- safe restart buttons\n\nGoal: Hudson can ask in Telegram \u2018status\u2019 and get a crisp report.",
+      "status": "backlog",
+      "project": "ops",
+      "tags": [
+        "uptime",
+        "dashboard"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Decide delivery: new page under Second Brain or standalone /ops",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Implement health summary (curl) + render",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Implement log tail viewer (journalctl -n 50)",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Implement restart actions (systemctl --user restart \u2026) with confirmation",
+          "done": false
+        },
+        {
+          "id": "s5",
+          "title": "Add to Mission Control as quick link",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "Calvin",
+          "text": "Built ops scripts + ops panel. See /ops/ops-status.sh and http://localhost:3066/ops/ (status snapshot + incident timeline).",
+          "timestamp": "2026-02-08T21:13:15Z"
+        }
+      ],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "notion_connect_ids",
+      "title": "Connect Notion: store hudson os page + tasks DB IDs",
+      "description": "Need the Notion page/database URLs from Hudson. Extract IDs, store in a workspace config file (e.g. notion/ids.json). Then enable Notion pulls for daily briefs + task syncing.",
+      "status": "backlog",
+      "project": "notion",
+      "tags": [
+        "notion",
+        "brief"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Create notion/ids.json schema + loader",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Implement URL->ID extractor",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Verify integration has access (query test)",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Map Notion properties to internal task fields",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "brief_pipeline",
+      "title": "Daily brief v2: cached trends + Notion priorities + ops status",
+      "description": "Make the morning brief reliable even when web_search is rate-limited. Use cached sources + 1-at-a-time searches. Include: weather, 3 trend links, Notion top priorities, ops health.",
+      "status": "backlog",
+      "project": "dashboard",
+      "tags": [
+        "brief"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Implement cached trend list file + refresh job",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Integrate Notion priorities",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Include ops summary",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "content_pipeline_seed",
+      "title": "Seed Content Pipeline: 10 reel ideas + scoring",
+      "description": "Create a content pipeline inside Mission Control with 10 starter ideas and a scoring rubric (novelty x ease x expected views x brand fit).",
+      "status": "backlog",
+      "project": "content",
+      "tags": [
+        "reels",
+        "ideas"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define scoring rubric (0-5) + template",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Add 10 initial surf reel ideas",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Define weekly ship plan (3-5 posts)",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "Calvin",
+          "text": "Seeded 10 reel ideas + scoring template: content/reel-ideas.md",
+          "timestamp": "2026-02-08T21:13:15Z"
+        }
+      ],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "amplo_pipeline_seed",
+      "title": "Seed Amplo pipeline: leads + follow-ups + proposal template",
+      "description": "Set up a simple lead/follow-up pipeline tasks + a proposal/offer template checklist. No outbound sending without Hudson approval.",
+      "status": "backlog",
+      "project": "amplo",
+      "tags": [
+        "sales",
+        "pipeline"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define stages + next-action rules",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Draft DM/email scripts (placeholders)",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Draft one-page offer template checklist",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "today_win_widget",
+      "title": "Today\u2019s Win widget: 1 metric + 1 deliverable",
+      "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
+      "status": "backlog",
+      "project": "dashboard",
+      "tags": [
+        "widget"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "streaks_widget",
+      "title": "Habit streaks overlay + \u2018at risk\u2019 alerts",
+      "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
+      "status": "backlog",
+      "project": "habits",
+      "tags": [
+        "widget"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "incident_timeline",
+      "title": "Incident timeline: log every crash/restart + suspected cause",
+      "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
+      "status": "backlog",
+      "project": "ops",
+      "tags": [
+        "widget"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "outreach_queue_widget",
+      "title": "Outreach queue widget: 10 leads w/ next action + drafts",
+      "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
+      "status": "backlog",
+      "project": "amplo",
+      "tags": [
+        "widget"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "content_scoring_widget",
+      "title": "Content idea scoring widget + auto-prioritized queue",
+      "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
+      "status": "backlog",
+      "project": "content",
+      "tags": [
+        "widget"
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T20:44:07Z"
+    },
+    {
+      "id": "epic_everything_engine",
+      "title": "EPIC: OpenClaw \u2018Everything Engine\u2019 (Oracle + Momentum + Reactor + Digests)",
+      "description": "Goal: wire Hudson\u2019s life/business/creative inputs into a single command center. Build iteratively: local-first, then add API integrations as credentials become available.\n\nConstraint: no outbound messages/emails/posts without Hudson approval.",
+      "status": "backlog",
+      "project": "dashboard",
+      "tags": [
+        "epic"
+      ],
+      "subtasks": [
+        {
+          "id": "mc-001",
+          "title": "Oracle (daily strategic brief @6am) \u2014 scaffold + inputs",
+          "done": false
+        },
+        {
+          "id": "mc-002",
+          "title": "Momentum Score (0\u2013100) \u2014 define signals + compute",
+          "done": false
+        },
+        {
+          "id": "mc-003",
+          "title": "Content Reactor (cross-pollination engine) \u2014 repository + collisions",
+          "done": false
+        },
+        {
+          "id": "mc-004",
+          "title": "Second Brain Digest (weekly) \u2014 synthesis + 1 question",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "Calvin",
+          "text": "Created EPIC from your message_id 110. I\u2019ll treat each subtask as \u2018broken until implemented\u2019 and iterate via heartbeats.",
+          "timestamp": "2026-02-08T21:31:49Z"
+        },
+        {
+          "author": "Calvin",
+          "text": "Fleshed specs written to everything-engine/* (Oracle, Momentum, Content Reactor, Weekly Digest, Clear Sky Sniper, Bit Workshop, Lie Detector, Prospect Psychologist, Life RPG). Next step is implementing v1 scripts + scheduling.",
+          "timestamp": "2026-02-08T21:34:31Z"
+        }
+      ],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "oracle_daily_brief_6am",
+      "title": "\ud83d\udd2e The Oracle: predictive daily briefing (6am)",
+      "description": "Local-first implementation. Inputs (phase 1): ops status + Mission Control priorities + weather. Phase 2: Notion + Calendar. Phase 3: ads dashboards + astro conditions.\n\nNeed from Hudson later: Notion links/IDs + Google auth + which ad platforms.",
+      "status": "backlog",
+      "project": "oracle",
+      "tags": [
+        "brief",
+        "automation"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define brief schema (sections + ordering)",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Implement generator script (markdown output)",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Schedule via cron @ 6am PT (Telegram delivery)",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Integrate Notion top priorities (when IDs provided)",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "momentum_score",
+      "title": "\ud83d\udcca Momentum Score (0\u2013100) + weakest-link recommendation",
+      "description": "Define 5\u20136 weighted inputs. Start with what we can measure locally: content shipped, tasks completed, workouts logged, ops stability. Later add revenue/school deadlines/sleep.",
+      "status": "backlog",
+      "project": "dashboard",
+      "tags": [
+        "metrics"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define inputs + weights + thresholds",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Implement daily compute + save to file",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Add to Mission Control dashboard (widget)",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "content_reactor",
+      "title": "\ud83e\uddea Content Reactor: cross-pollination \u2018collision report\u2019",
+      "description": "Create a central content repository structure + weekly collision report that mashes surf + astro + marketing + comedy into unique angles. Local-first; later can pull from Drive/IG exports.",
+      "status": "backlog",
+      "project": "content",
+      "tags": [
+        "ideas",
+        "weekly"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Create content inbox folders + tagging conventions",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Implement collision-report generator (3\u20135 mashups)",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Schedule weekly run (Sun) + deliver in Telegram",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "second_brain_digest_weekly",
+      "title": "\ud83d\uddde\ufe0f Second Brain Digest (Sunday) \u2014 weekly synthesis + 1 question",
+      "description": "Aggregate created/consumed/learned/accomplished. Output: a personal newsletter for Hudson + 1 provocative question. Local-first using workspace activity + Mission Control + vault notes.",
+      "status": "backlog",
+      "project": "dashboard",
+      "tags": [
+        "weekly",
+        "reflection"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define data sources in workspace (vault + tasks + logs)",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Implement generator script",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Schedule via cron Sunday evening",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "clear_sky_sniper",
+      "title": "\ud83c\udf19 Clear Sky Sniper: imaging window alerts + target list (scaffold)",
+      "description": "Scaffold: moon phase calc + season targets list + decision logic. Later wire real seeing/cloud data + calendar constraints.",
+      "status": "backlog",
+      "project": "astro",
+      "tags": [
+        "alerts"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define gear profile + target list format",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Implement moon phase + darkness window calc",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Add alert logic (local) + Telegram notify",
+          "done": false
+        }
+      ],
+      "priority": "low",
+      "comments": [],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "bit_workshop",
+      "title": "\ud83c\udfa4 Bit Workshop: writers-room prompts + weekly output",
+      "description": "Create a structured prompt pack that takes raw premises and returns: angles, misdirects, tags, and 3 style passes (dark/absurd/casual).",
+      "status": "backlog",
+      "project": "comedy",
+      "tags": [
+        "prompting"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Design premise intake template",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Create 3 \u2018comedic lenses\u2019 output format",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Set up weekly writers-room run",
+          "done": false
+        }
+      ],
+      "priority": "low",
+      "comments": [],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "life_rpg",
+      "title": "\ud83c\udfae Life RPG: XP + skill trees + boss battles (design doc)",
+      "description": "Design-only first: define skills, XP rules, streaks, and HUD widgets. Implement later.",
+      "status": "backlog",
+      "project": "rpg",
+      "tags": [
+        "gamification"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define skill trees (marketing/surf/astro/comedy/health)",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Define XP rules + streak mechanics",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Create HUD widget spec for Mission Control",
+          "done": false
+        }
+      ],
+      "priority": "low",
+      "comments": [],
+      "createdAt": "2026-02-08T21:31:49Z"
+    },
+    {
+      "id": "creative_293ac6b838",
+      "title": "\ud83c\udfac Reel Pack: 5 \u201cSurf x Business\u201d scripts (hooks + VO + captions)",
+      "description": "Create 5 short-form scripts that translate surf lessons into marketing/business principles. Keep them 30\u201345s. Provide hook variants, VO, on-screen text beats, caption, CTA. Save under content/scripts/.",
+      "status": "review",
+      "project": "content_pipeline",
+      "tags": [
+        "content",
+        "reels",
+        "surf",
+        "marketing"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Pick 5 lessons (conditions, patience, reps, equipment, lineup positioning)",
+          "done": true
+        },
+        {
+          "id": "s2",
+          "title": "Write 5 scripts (with 3 hook variants each)",
+          "done": true
+        },
+        {
+          "id": "s3",
+          "title": "Create captions + CTA + 5 hashtag sets",
+          "done": true
+        },
+        {
+          "id": "s4",
+          "title": "Write batch recording shot list (1 hour session)",
+          "done": true
+        }
+      ],
+      "priority": "high",
+      "dod": "5 scripts saved to content/scripts/ + batch shot list + captions; ready to record.",
+      "comments": [
+        {
+          "author": "Calvin",
+          "text": "Starting this now. Will deliver 5 scripts + captions + shot list to content/scripts/.",
+          "timestamp": "2026-02-08T23:25:55Z"
+        },
+        {
+          "author": "Calvin",
+          "text": "Complete. Delivered 5 scripts + captions/CTAs + batch shot list in `content/scripts/surf-x-business-pack-1.md`. Ready to record.",
+          "timestamp": "2026-02-08T23:26:40Z"
+        }
+      ],
+      "createdAt": "2026-02-08T23:22:02Z"
+    },
+    {
+      "id": "creative_0028a275f7",
+      "title": "\ud83e\uddf2 \u201cComment keyword\u201d growth loop: 10 CTA templates + reply scripts",
+      "description": "Design a repeatable Instagram comment-to-DM loop (no spam). Create 10 CTA templates (e.g., comment CONDITIONS), plus the DM reply message and a short follow-up. Save to content/growth/cta-library.md.",
+      "status": "review",
+      "project": "content_pipeline",
+      "tags": [
+        "content",
+        "growth",
+        "instagram"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "List 10 keywords mapped to value assets",
+          "done": true
+        },
+        {
+          "id": "s2",
+          "title": "Write DM reply scripts (friendly, short)",
+          "done": true
+        },
+        {
+          "id": "s3",
+          "title": "Write follow-up scripts (24h later)",
+          "done": true
+        }
+      ],
+      "priority": "medium",
+      "dod": "Library doc created with 10 CTA+DM+followup combos.",
+      "comments": [
+        {
+          "author": "Calvin",
+          "text": "Starting: building CTA keyword library + DM reply scripts + follow-ups. Will save to content/growth/cta-library.md",
+          "timestamp": "2026-02-08T23:28:44Z"
+        },
+        {
+          "author": "Calvin",
+          "text": "Complete. Created CTA keyword + DM reply library (10 templates) at `content/growth/cta-library.md`.",
+          "timestamp": "2026-02-08T23:29:26Z"
+        }
+      ],
+      "createdAt": "2026-02-08T23:22:02Z"
+    },
+    {
+      "id": "creative_81ff1b4bdc",
+      "title": "\ud83d\udcc8 Content scorecard v1: what to post next (simple + ruthless)",
+      "description": "Make a one-page scorecard that ranks reel ideas by: novelty, clarity, watch-time potential, shareability, and alignment with Amplo offer. Use 1\u20135 scoring with weights. Save to content/scorecard.md and integrate into /cc widget later.",
+      "status": "review",
+      "project": "dashboards",
+      "tags": [
+        "content",
+        "systems",
+        "scoring"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define 5 scoring dimensions + weights",
+          "done": true
+        },
+        {
+          "id": "s2",
+          "title": "Create a rubric (what a 1 vs 5 means)",
+          "done": true
+        },
+        {
+          "id": "s3",
+          "title": "Score the existing 10 reel ideas",
+          "done": true
+        }
+      ],
+      "priority": "medium",
+      "dod": "Scorecard doc exists + current reel ideas scored with top 3 recommended.",
+      "comments": [
+        {
+          "author": "Calvin",
+          "text": "Starting: create content scorecard v1 + rubric + score current reel ideas; output top 3 recommendations.",
+          "timestamp": "2026-02-09T00:14:32Z"
+        },
+        {
+          "author": "Calvin",
+          "text": "Complete. Created scorecard + scored current reel ideas + top 3 recommendations at `content/scorecard.md`.",
+          "timestamp": "2026-02-09T00:15:28Z"
+        }
+      ],
+      "createdAt": "2026-02-08T23:22:02Z"
+    },
+    {
+      "id": "creative_e12eb6146f",
+      "title": "\ud83e\udde0 Bit Workshop: 10 \u201cmarketing pain\u201d joke premises (clean, short)",
+      "description": "Write 10 comedy premises from real marketing pain points (leads, scope creep, dashboards). Each includes: premise, punchline direction, and a punchier tag. Save to everything-engine/comedy/outbox/.",
+      "status": "backlog",
+      "project": "comedy",
+      "tags": [
+        "comedy",
+        "writing",
+        "marketing"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "List 10 pain points from agency life",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Write premise + punchline direction + tag",
+          "done": false
+        }
+      ],
+      "priority": "low",
+      "dod": "Markdown file with 10 premises in everything-engine/comedy/outbox/.",
+      "comments": [],
+      "createdAt": "2026-02-08T23:22:02Z"
+    },
+    {
+      "id": "creative_4926851873",
+      "title": "\ud83e\udde9 Series concept: \u201c1 Minute Missions\u201d weekly format (8 episodes)",
+      "description": "Define a weekly series format that\u2019s easy to film. Provide 8 episode outlines with hooks + talking points + b-roll. Save to content/series/1-minute-missions.md.",
+      "status": "review",
+      "project": "content_pipeline",
+      "tags": [
+        "content",
+        "series",
+        "format"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Define the series rules (length, structure, CTA)",
+          "done": true
+        },
+        {
+          "id": "s2",
+          "title": "Draft 8 episodes",
+          "done": true
+        },
+        {
+          "id": "s3",
+          "title": "Create a template Hudson can reuse",
+          "done": true
+        }
+      ],
+      "priority": "medium",
+      "dod": "Series doc with 8 episodes + reusable template.",
+      "comments": [
+        {
+          "author": "Calvin",
+          "text": "Starting: building \u201c1 Minute Missions\u201d series format + 8 episode outlines + reusable template. Will save to content/series/1-minute-missions.md",
+          "timestamp": "2026-02-08T23:57:39Z"
+        },
+        {
+          "author": "Calvin",
+          "text": "Complete. Created series format + 8 episode outlines + reusable template at `content/series/1-minute-missions.md`.",
+          "timestamp": "2026-02-08T23:58:15Z"
+        }
+      ],
+      "createdAt": "2026-02-08T23:22:02Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "amplo",
+      "name": "Amplo Marketing",
+      "color": "#8b5cf6",
+      "icon": "\ud83d\udcc8"
+    },
+    {
+      "id": "astro",
+      "name": "Astronomy",
+      "color": "#a78bfa",
+      "icon": "\ud83d\udd2d"
+    },
+    {
+      "id": "comedy",
+      "name": "Comedy",
+      "color": "#fb7185",
+      "icon": "\ud83c\udfa4"
+    },
+    {
+      "id": "content",
+      "name": "Content Pipeline",
+      "color": "#f59e0b",
+      "icon": "\ud83c\udfac"
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboards",
+      "color": "#06b6d4",
+      "icon": "\ud83d\udda5\ufe0f"
+    },
+    {
+      "id": "guides",
+      "name": "Guides",
+      "color": "#10b981",
+      "icon": "\ud83d\udcda"
+    },
+    {
+      "id": "habits",
+      "name": "Habits / Streaks",
+      "color": "#84cc16",
+      "icon": "\u2705"
+    },
+    {
+      "id": "notion",
+      "name": "Hudson OS (Notion)",
+      "color": "#22c55e",
+      "icon": "\ud83e\udde0"
+    },
+    {
+      "id": "rpg",
+      "name": "Life RPG",
+      "color": "#f97316",
+      "icon": "\ud83c\udfae"
+    },
+    {
+      "id": "default",
+      "name": "My Project",
+      "color": "#3b82f6",
+      "icon": "\ud83d\udcc1"
+    },
+    {
+      "id": "ops",
+      "name": "Ops / Systems",
+      "color": "#ef4444",
+      "icon": "\ud83d\udee0\ufe0f"
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle Briefing",
+      "color": "#0ea5e9",
+      "icon": "\ud83d\udd2e"
+    }
+  ],
+  "activities": [
+    {
+      "type": "created",
+      "actor": "Mission Control",
+      "task": "Onboarding Guide",
+      "time": "just now"
+    },
+    {
+      "type": "created",
+      "actor": "Mission Control",
+      "task": "User Guide",
+      "time": "just now"
+    }
+  ],
+  "lastUpdated": "2026-02-08T21:34:31Z"
+}
