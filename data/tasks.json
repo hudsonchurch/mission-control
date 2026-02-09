@@ -553,7 +553,7 @@
       "id": "oracle_daily_brief_6am",
       "title": "🔮 The Oracle: predictive daily briefing (6am)",
       "description": "Local-first implementation. Inputs (phase 1): ops status + Mission Control priorities + weather. Phase 2: Notion + Calendar. Phase 3: ads dashboards + astro conditions.\n\nNeed from Hudson later: Notion links/IDs + Google auth + which ad platforms.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "oracle",
       "tags": [
         "brief",
@@ -583,7 +583,8 @@
       ],
       "priority": "high",
       "comments": [],
-      "createdAt": "2026-02-08T21:31:49Z"
+      "createdAt": "2026-02-08T21:31:49Z",
+      "sortOrder": 3
     },
     {
       "id": "momentum_score",
@@ -1070,6 +1071,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "🔮 The Oracle: predictive daily briefing (6am)",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "Seed Content Pipeline: 10 reel ideas + scoring",
       "from": "backlog",
       "to": "in_progress",
@@ -1104,5 +1113,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-09T04:52:22.092Z"
+  "lastUpdated": "2026-02-09T04:59:30.929Z"
 }
