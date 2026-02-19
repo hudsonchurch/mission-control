@@ -439,7 +439,7 @@
       "id": "today_win_widget",
       "title": "Today’s Win widget: 1 metric + 1 deliverable",
       "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "dashboard",
       "tags": [
         "widget"
@@ -447,7 +447,8 @@
       "subtasks": [],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-02-08T20:44:07Z"
+      "createdAt": "2026-02-08T20:44:07Z",
+      "sortOrder": 0
     },
     {
       "id": "streaks_widget",
@@ -994,7 +995,7 @@
       ],
       "subtasks": [],
       "createdAt": "2026-02-09T04:25:27.365Z",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "task_1771529496043",
@@ -1089,6 +1090,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "Today’s Win widget: 1 metric + 1 deliverable",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "Daily brief v2: cached trends + Notion priorities + ops status",
       "from": "backlog",
       "to": "in_progress",
@@ -1171,5 +1180,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:27.733Z"
+  "lastUpdated": "2026-02-19T19:33:29.779Z"
 }
