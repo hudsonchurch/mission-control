@@ -727,7 +727,7 @@
       "title": "🎤 Bit Workshop: writers-room prompts + weekly output",
       "description": "Create a structured prompt pack that takes raw premises and returns: angles, misdirects, tags, and 3 style passes (dark/absurd/casual).",
       "status": "in_progress",
-      "project": "comedy",
+      "project": "system",
       "tags": [
         "prompting"
       ],
@@ -927,7 +927,7 @@
       "title": "🧠 Bit Workshop: 10 “marketing pain” joke premises (clean, short)",
       "description": "Write 10 comedy premises from real marketing pain points (leads, scope creep, dashboards). Each includes: premise, punchline direction, and a punchier tag. Save to everything-engine/comedy/outbox/.",
       "status": "in_progress",
-      "project": "comedy",
+      "project": "system",
       "tags": [
         "comedy",
         "writing",
@@ -1036,12 +1036,6 @@
       "name": "Astronomy",
       "color": "#a78bfa",
       "icon": "🔭"
-    },
-    {
-      "id": "comedy",
-      "name": "Comedy",
-      "color": "#fb7185",
-      "icon": "🎤"
     },
     {
       "id": "content",
