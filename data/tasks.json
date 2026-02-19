@@ -365,7 +365,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "content_pipeline_seed",
@@ -450,7 +450,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 7
+      "sortOrder": 8
     },
     {
       "id": "streaks_widget",
@@ -465,7 +465,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 6
+      "sortOrder": 7
     },
     {
       "id": "incident_timeline",
@@ -480,7 +480,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 5
+      "sortOrder": 6
     },
     {
       "id": "outreach_queue_widget",
@@ -495,7 +495,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 4
+      "sortOrder": 5
     },
     {
       "id": "content_scoring_widget",
@@ -510,7 +510,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 3
+      "sortOrder": 4
     },
     {
       "id": "epic_everything_engine",
@@ -625,7 +625,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T21:31:49Z",
-      "sortOrder": 2
+      "sortOrder": 3
     },
     {
       "id": "content_reactor",
@@ -689,13 +689,13 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T21:31:49Z",
-      "sortOrder": 1
+      "sortOrder": 2
     },
     {
       "id": "clear_sky_sniper",
       "title": "🌙 Clear Sky Sniper: imaging window alerts + target list (scaffold)",
       "description": "Scaffold: moon phase calc + season targets list + decision logic. Later wire real seeing/cloud data + calendar constraints.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "astro",
       "tags": [
         "alerts"
@@ -719,7 +719,8 @@
       ],
       "priority": "low",
       "comments": [],
-      "createdAt": "2026-02-08T21:31:49Z"
+      "createdAt": "2026-02-08T21:31:49Z",
+      "sortOrder": 0
     },
     {
       "id": "bit_workshop",
@@ -1003,7 +1004,7 @@
       ],
       "subtasks": [],
       "createdAt": "2026-02-09T04:25:27.365Z",
-      "sortOrder": 8
+      "sortOrder": 9
     },
     {
       "id": "task_1771529496043",
@@ -1095,6 +1096,14 @@
     }
   ],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
+      "task": "🌙 Clear Sky Sniper: imaging window alerts + target list (scaffold)",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "hudsonchurch",
@@ -1252,5 +1261,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:44.429Z"
+  "lastUpdated": "2026-02-19T19:33:45.714Z"
 }
