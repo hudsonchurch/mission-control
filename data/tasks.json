@@ -448,7 +448,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 3
+      "sortOrder": 4
     },
     {
       "id": "streaks_widget",
@@ -463,7 +463,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 2
+      "sortOrder": 3
     },
     {
       "id": "incident_timeline",
@@ -478,7 +478,7 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 1
+      "sortOrder": 2
     },
     {
       "id": "outreach_queue_widget",
@@ -493,13 +493,13 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "content_scoring_widget",
       "title": "Content idea scoring widget + auto-prioritized queue",
       "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "content",
       "tags": [
         "widget"
@@ -507,7 +507,8 @@
       "subtasks": [],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-02-08T20:44:07Z"
+      "createdAt": "2026-02-08T20:44:07Z",
+      "sortOrder": 0
     },
     {
       "id": "epic_everything_engine",
@@ -998,7 +999,7 @@
       ],
       "subtasks": [],
       "createdAt": "2026-02-09T04:25:27.365Z",
-      "sortOrder": 4
+      "sortOrder": 5
     },
     {
       "id": "task_1771529496043",
@@ -1090,6 +1091,14 @@
     }
   ],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
+      "task": "Content idea scoring widget + auto-prioritized queue",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "hudsonchurch",
@@ -1207,5 +1216,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:35.277Z"
+  "lastUpdated": "2026-02-19T19:33:36.739Z"
 }
