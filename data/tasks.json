@@ -751,13 +751,13 @@
       "priority": "low",
       "comments": [],
       "createdAt": "2026-02-08T21:31:49Z",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "life_rpg",
       "title": "🎮 Life RPG: XP + skill trees + boss battles (design doc)",
       "description": "Design-only first: define skills, XP rules, streaks, and HUD widgets. Implement later.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "rpg",
       "tags": [
         "gamification"
@@ -781,7 +781,8 @@
       ],
       "priority": "low",
       "comments": [],
-      "createdAt": "2026-02-08T21:31:49Z"
+      "createdAt": "2026-02-08T21:31:49Z",
+      "sortOrder": 0
     },
     {
       "id": "creative_293ac6b838",
@@ -1100,6 +1101,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "🎮 Life RPG: XP + skill trees + boss battles (design doc)",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "🎤 Bit Workshop: writers-room prompts + weekly output",
       "from": "backlog",
       "to": "in_progress",
@@ -1270,5 +1279,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:46.976Z"
+  "lastUpdated": "2026-02-19T19:33:48.261Z"
 }
