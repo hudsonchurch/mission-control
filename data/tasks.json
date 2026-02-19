@@ -338,7 +338,7 @@
       "id": "brief_pipeline",
       "title": "Daily brief v2: cached trends + Notion priorities + ops status",
       "description": "Make the morning brief reliable even when web_search is rate-limited. Use cached sources + 1-at-a-time searches. Include: weather, 3 trend links, Notion top priorities, ops health.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "dashboard",
       "tags": [
         "brief"
@@ -362,7 +362,8 @@
       ],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-02-08T20:44:07Z"
+      "createdAt": "2026-02-08T20:44:07Z",
+      "sortOrder": 0
     },
     {
       "id": "content_pipeline_seed",
@@ -1088,6 +1089,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "Daily brief v2: cached trends + Notion priorities + ops status",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "🧪 Content Reactor: cross-pollination ‘collision report’",
       "from": "backlog",
       "to": "in_progress",
@@ -1162,5 +1171,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:24.957Z"
+  "lastUpdated": "2026-02-19T19:33:27.733Z"
 }
