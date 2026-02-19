@@ -295,7 +295,7 @@
         }
       ],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 1
+      "sortOrder": 2
     },
     {
       "id": "notion_connect_ids",
@@ -332,7 +332,7 @@
       "priority": "high",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 4
+      "sortOrder": 5
     },
     {
       "id": "brief_pipeline",
@@ -400,7 +400,7 @@
         }
       ],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 3
+      "sortOrder": 4
     },
     {
       "id": "amplo_pipeline_seed",
@@ -432,7 +432,7 @@
       "priority": "high",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 2
+      "sortOrder": 3
     },
     {
       "id": "today_win_widget",
@@ -549,7 +549,7 @@
         }
       ],
       "createdAt": "2026-02-08T21:31:49Z",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "oracle_daily_brief_6am",
@@ -586,7 +586,7 @@
       "priority": "high",
       "comments": [],
       "createdAt": "2026-02-08T21:31:49Z",
-      "sortOrder": 5
+      "sortOrder": 6
     },
     {
       "id": "momentum_score",
@@ -622,7 +622,7 @@
       "id": "content_reactor",
       "title": "🧪 Content Reactor: cross-pollination ‘collision report’",
       "description": "Create a central content repository structure + weekly collision report that mashes surf + astro + marketing + comedy into unique angles. Local-first; later can pull from Drive/IG exports.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "content",
       "tags": [
         "ideas",
@@ -647,7 +647,8 @@
       ],
       "priority": "high",
       "comments": [],
-      "createdAt": "2026-02-08T21:31:49Z"
+      "createdAt": "2026-02-08T21:31:49Z",
+      "sortOrder": 0
     },
     {
       "id": "second_brain_digest_weekly",
@@ -1006,7 +1007,7 @@
       "priority": "high",
       "createdAt": "2026-02-19T19:31:36.043Z",
       "status": "in_progress",
-      "sortOrder": 6
+      "sortOrder": 7
     }
   ],
   "projects": [
@@ -1087,6 +1088,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "🧪 Content Reactor: cross-pollination ‘collision report’",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "EPIC: OpenClaw ‘Everything Engine’ (Oracle + Momentum + Reactor + Digests)",
       "from": "backlog",
       "to": "in_progress",
@@ -1153,5 +1162,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:22.628Z"
+  "lastUpdated": "2026-02-19T19:33:24.957Z"
 }
