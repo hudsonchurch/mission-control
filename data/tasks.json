@@ -448,13 +448,13 @@
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-08T20:44:07Z",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "streaks_widget",
       "title": "Habit streaks overlay + ‘at risk’ alerts",
       "description": "Seed + implement as lightweight widgets (initially within Mission Control via tasks/comments; later as Glance widgets).",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "habits",
       "tags": [
         "widget"
@@ -462,7 +462,8 @@
       "subtasks": [],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-02-08T20:44:07Z"
+      "createdAt": "2026-02-08T20:44:07Z",
+      "sortOrder": 0
     },
     {
       "id": "incident_timeline",
@@ -995,7 +996,7 @@
       ],
       "subtasks": [],
       "createdAt": "2026-02-09T04:25:27.365Z",
-      "sortOrder": 1
+      "sortOrder": 2
     },
     {
       "id": "task_1771529496043",
@@ -1090,6 +1091,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "Habit streaks overlay + ‘at risk’ alerts",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "Today’s Win widget: 1 metric + 1 deliverable",
       "from": "backlog",
       "to": "in_progress",
@@ -1180,5 +1189,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:29.779Z"
+  "lastUpdated": "2026-02-19T19:33:31.501Z"
 }
