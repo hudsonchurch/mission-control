@@ -991,6 +991,19 @@
       "subtasks": [],
       "createdAt": "2026-02-09T04:25:27.365Z",
       "sortOrder": 0
+    },
+    {
+      "id": "task_1771529496043",
+      "title": "test task",
+      "description": "ignore",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "high",
+      "createdAt": "2026-02-19T19:31:36.043Z",
+      "status": "backlog"
     }
   ],
   "projects": [
@@ -1113,5 +1126,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-09T04:59:30.929Z"
+  "lastUpdated": "2026-02-19T19:31:36.043Z"
 }
