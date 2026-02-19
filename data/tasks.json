@@ -1003,7 +1003,8 @@
       "subtasks": [],
       "priority": "high",
       "createdAt": "2026-02-19T19:31:36.043Z",
-      "status": "backlog"
+      "status": "in_progress",
+      "sortOrder": 4
     }
   ],
   "projects": [
@@ -1084,6 +1085,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "test task",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "🔮 The Oracle: predictive daily briefing (6am)",
       "from": "backlog",
       "to": "in_progress",
@@ -1126,5 +1135,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:31:36.043Z"
+  "lastUpdated": "2026-02-19T19:32:08.450Z"
 }
