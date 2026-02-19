@@ -726,7 +726,7 @@
       "id": "bit_workshop",
       "title": "🎤 Bit Workshop: writers-room prompts + weekly output",
       "description": "Create a structured prompt pack that takes raw premises and returns: angles, misdirects, tags, and 3 style passes (dark/absurd/casual).",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "comedy",
       "tags": [
         "prompting"
@@ -750,7 +750,8 @@
       ],
       "priority": "low",
       "comments": [],
-      "createdAt": "2026-02-08T21:31:49Z"
+      "createdAt": "2026-02-08T21:31:49Z",
+      "sortOrder": 0
     },
     {
       "id": "life_rpg",
@@ -1099,6 +1100,14 @@
     {
       "type": "moved",
       "actor": "hudsonchurch",
+      "task": "🎤 Bit Workshop: writers-room prompts + weekly output",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
       "task": "🌙 Clear Sky Sniper: imaging window alerts + target list (scaffold)",
       "from": "backlog",
       "to": "in_progress",
@@ -1261,5 +1270,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:45.714Z"
+  "lastUpdated": "2026-02-19T19:33:46.976Z"
 }
