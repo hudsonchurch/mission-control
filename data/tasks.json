@@ -751,7 +751,7 @@
       "priority": "low",
       "comments": [],
       "createdAt": "2026-02-08T21:31:49Z",
-      "sortOrder": 1
+      "sortOrder": 2
     },
     {
       "id": "life_rpg",
@@ -782,7 +782,7 @@
       "priority": "low",
       "comments": [],
       "createdAt": "2026-02-08T21:31:49Z",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "creative_293ac6b838",
@@ -926,7 +926,7 @@
       "id": "creative_e12eb6146f",
       "title": "🧠 Bit Workshop: 10 “marketing pain” joke premises (clean, short)",
       "description": "Write 10 comedy premises from real marketing pain points (leads, scope creep, dashboards). Each includes: premise, punchline direction, and a punchier tag. Save to everything-engine/comedy/outbox/.",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "comedy",
       "tags": [
         "comedy",
@@ -948,7 +948,8 @@
       "priority": "low",
       "dod": "Markdown file with 10 premises in everything-engine/comedy/outbox/.",
       "comments": [],
-      "createdAt": "2026-02-08T23:22:02Z"
+      "createdAt": "2026-02-08T23:22:02Z",
+      "sortOrder": 0
     },
     {
       "id": "creative_4926851873",
@@ -1098,6 +1099,14 @@
     }
   ],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "hudsonchurch",
+      "task": "🧠 Bit Workshop: 10 “marketing pain” joke premises (clean, short)",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "hudsonchurch",
@@ -1279,5 +1288,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-02-19T19:33:48.261Z"
+  "lastUpdated": "2026-02-19T19:33:49.475Z"
 }
